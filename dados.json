@@ -1,0 +1,76 @@
+{
+    "tarefas": [
+        {
+            "id": 1,
+            "titulo": "Pesquisar referências para o projeto",
+            "status": "fazer",
+            "prioridade": "media",
+            "prazo": "16/08/2026",
+            "projeto": "Biblioteca Digital",
+            "responsavel": "Mateus Santana"
+        },
+        {
+            "id": 2,
+            "titulo": "Organizar requisitos da aplicação",
+            "status": "fazer",
+            "prioridade": "alta",
+            "prazo": "19/08/2026",
+            "projeto": "Agenda Universitária",
+            "responsavel": "Mateus Santana"
+        },
+        {
+            "id": 3,
+            "titulo": "Desenvolver protótipo da interface",
+            "status": "andamento",
+            "prioridade": "alta",
+            "prazo": "21/08/2026",
+            "projeto": "Plataforma de Estudos",
+            "responsavel": "Mateus Santana"
+        },
+        {
+            "id": 4,
+            "titulo": "Implementar cadastro de usuários",
+            "status": "andamento",
+            "prioridade": "media",
+            "prazo": "23/08/2026",
+            "projeto": "Sistema de Biblioteca",
+            "responsavel": "Mateus Santana"
+        },
+        {
+            "id": 5,
+            "titulo": "Revisar estrutura das páginas",
+            "status": "revisao",
+            "prioridade": "baixa",
+            "prazo": "24/08/2026",
+            "projeto": "Portal Acadêmico",
+            "responsavel": "Mateus Santana"
+        },
+        {
+            "id": 6,
+            "titulo": "Conferir informações cadastradas",
+            "status": "revisao",
+            "prioridade": "alta",
+            "prazo": "28/08/2026",
+            "projeto": "Controle de Atividades",
+            "responsavel": "Mateus Santana"
+        },
+        {
+            "id": 7,
+            "titulo": "Definir funcionalidades principais",
+            "status": "concluida",
+            "prioridade": "alta",
+            "prazo": "07/08/2026",
+            "projeto": "Organizador de Estudos",
+            "responsavel": "Mateus Santana"
+        },
+        {
+            "id": 8,
+            "titulo": "Levantar necessidades dos usuários",
+            "status": "concluida",
+            "prioridade": "baixa",
+            "prazo": "09/08/2026",
+            "projeto": "Aplicação Universitária",
+            "responsavel": "Mateus Santana"
+        }
+    ]
+}
