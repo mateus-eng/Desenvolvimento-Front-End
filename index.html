@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@
         <section aria-labelledby="titulo-filtros">
             <h2 id="titulo-filtros">Busca e filtros</h2>
 
-            <form>
+            <form id="form-filtros">
 
                 <div>
                     <label for="busca">Buscar tarefa por título:</label>
@@ -34,17 +35,17 @@
                     </div>
 
                     <div>
-                        <input type="radio" id="status-fazer" name="status" value="a-fazer">
+                        <input type="radio" id="status-fazer" name="status" value="fazer">
                         <label for="status-fazer">A fazer</label>
                     </div>
 
                     <div>
-                        <input type="radio" id="status-andamento" name="status" value="em-andamento">
+                        <input type="radio" id="status-andamento" name="status" value="andamento">
                         <label for="status-andamento">Em andamento</label>
                     </div>
 
                     <div>
-                        <input type="radio" id="status-revisao" name="status" value="em-revisao">
+                        <input type="radio" id="status-revisao" name="status" value="revisao">
                         <label for="status-revisao">Em revisão</label>
                     </div>
 
@@ -80,125 +81,32 @@
 
                 </fieldset>
 
+                <div>
+                    <label for="ordenacao">Ordenar por prazo:</label>
+
+                    <select id="ordenacao" name="ordenacao">
+                        <option value="nenhuma">Sem ordenação</option>
+                        <option value="crescente">Prazo mais próximo</option>
+                        <option value="decrescente">Prazo mais distante</option>
+                    </select>
+                </div>
+
                 <button type="submit">Aplicar filtros</button>
+
+                <button type="button" id="limpar-filtros">
+                    Limpar filtros
+                </button>
 
             </form>
         </section>
 
         <section aria-labelledby="titulo-quadro">
+
             <h2 id="titulo-quadro">Quadro de tarefas</h2>
 
-            <section aria-labelledby="titulo-a-fazer">
-                <h3 id="titulo-a-fazer">A fazer</h3>
+            <div id="status" role="status" aria-live="polite"></div>
 
-                <ul>
-
-                    <li>
-                        <article>
-                            <h4>Pesquisar referências para o projeto</h4>
-                            <p><strong>Projeto:</strong> Biblioteca Digital</p>
-                            <p><strong>Responsável:</strong> Mateus Santana Machado</p>
-                            <p><strong>Prazo:</strong> 16/08/2026</p>
-                            <p><strong>Prioridade:</strong> Média</p>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <h4>Organizar requisitos da aplicação</h4>
-                            <p><strong>Projeto:</strong> Agenda Universitária</p>
-                            <p><strong>Responsável:</strong> Rafael</p>
-                            <p><strong>Prazo:</strong> 19/08/2026</p>
-                            <p><strong>Prioridade:</strong> Alta</p>
-                        </article>
-                    </li>
-
-                </ul>
-            </section>
-
-            <section aria-labelledby="titulo-andamento">
-                <h3 id="titulo-andamento">Em andamento</h3>
-
-                <ul>
-
-                    <li>
-                        <article>
-                            <h4>Desenvolver protótipo da interface</h4>
-                            <p><strong>Projeto:</strong> Plataforma de Estudos</p>
-                            <p><strong>Responsável:</strong> Mateus Santana Machado</p>
-                            <p><strong>Prazo:</strong> 21/08/2026</p>
-                            <p><strong>Prioridade:</strong> Alta</p>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <h4>Implementar cadastro de usuários</h4>
-                            <p><strong>Projeto:</strong> Sistema de Biblioteca</p>
-                            <p><strong>Responsável:</strong> Gabriel</p>
-                            <p><strong>Prazo:</strong> 23/08/2026</p>
-                            <p><strong>Prioridade:</strong> Média</p>
-                        </article>
-                    </li>
-
-                </ul>
-            </section>
-
-            <section aria-labelledby="titulo-revisao">
-                <h3 id="titulo-revisao">Em revisão</h3>
-
-                <ul>
-
-                    <li>
-                        <article>
-                            <h4>Revisar estrutura das páginas</h4>
-                            <p><strong>Projeto:</strong> Portal Acadêmico</p>
-                            <p><strong>Responsável:</strong> Mateus Santana Machado</p>
-                            <p><strong>Prazo:</strong> 24/08/2026</p>
-                            <p><strong>Prioridade:</strong> Baixa</p>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <h4>Conferir informações cadastradas</h4>
-                            <p><strong>Projeto:</strong> Controle de Atividades</p>
-                            <p><strong>Responsável:</strong> Felipe</p>
-                            <p><strong>Prazo:</strong> 28/08/2026</p>
-                            <p><strong>Prioridade:</strong> Alta</p>
-                        </article>
-                    </li>
-
-                </ul>
-            </section>
-
-            <section aria-labelledby="titulo-concluida">
-                <h3 id="titulo-concluida">Concluída</h3>
-
-                <ul>
-
-                    <li>
-                        <article>
-                            <h4>Definir funcionalidades principais</h4>
-                            <p><strong>Projeto:</strong> Organizador de Estudos</p>
-                            <p><strong>Responsável:</strong> Mateus Santana Machado</p>
-                            <p><strong>Prazo:</strong> 07/08/2026</p>
-                            <p><strong>Prioridade:</strong> Alta</p>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article>
-                            <h4>Levantar necessidades dos usuários</h4>
-                            <p><strong>Projeto:</strong> Aplicação Universitária</p>
-                            <p><strong>Responsável:</strong> Beatriz</p>
-                            <p><strong>Prazo:</strong> 09/08/2026</p>
-                            <p><strong>Prioridade:</strong> Baixa</p>
-                        </article>
-                    </li>
-
-                </ul>
-            </section>
+            <div id="tarefas-container"></div>
 
         </section>
 
@@ -209,5 +117,8 @@
         <p>Disciplina: Desenvolvimento Frontend — 2026.2</p>
     </footer>
 
+    <script type="module" src="js/app.js"></script>
+
 </body>
+
 </html>
